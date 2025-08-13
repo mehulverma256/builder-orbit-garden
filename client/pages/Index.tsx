@@ -33,7 +33,7 @@ export default function Index() {
       <main>
         <HeroSection />
         <FeaturedBikes />
-        <SellYourBike />
+        <SellYourBike onFormSubmit={handleFormSubmit} />
         <HowItWorks />
         <CustomerStories />
         <FAQs />
