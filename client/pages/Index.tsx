@@ -1,62 +1,50 @@
-import { DemoResponse } from "@shared/api";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
+import FeaturedBikes from "@/components/FeaturedBikes";
+import SellYourBike from "@/components/SellYourBike";
+import HowItWorks from "@/components/HowItWorks";
+import CustomerStories from "@/components/CustomerStories";
+import FAQs from "@/components/FAQs";
+import Footer from "@/components/Footer";
+import ThankYouModal from "@/components/ThankYouModal";
 
 export default function Index() {
-  const [exampleFromServer, setExampleFromServer] = useState("");
-  // Fetch users on component mount
-  useEffect(() => {
-    fetchDemo();
-  }, []);
+  const [isThankYouModalOpen, setIsThankYouModalOpen] = useState(false);
 
-  // Example of how to fetch data from the server (if needed)
-  const fetchDemo = async () => {
-    try {
-      const response = await fetch("/api/demo");
-      const data = (await response.json()) as DemoResponse;
-      setExampleFromServer(data.message);
-    } catch (error) {
-      console.error("Error fetching hello:", error);
-    }
+  const handleFormSubmit = () => {
+    // This would be called when any lead capture form is submitted
+    setIsThankYouModalOpen(true);
+  };
+
+  const handleExplore = () => {
+    // Close modal and redirect to explore bikes or main catalog
+    setIsThankYouModalOpen(false);
+    // You could add navigation here to a bikes catalog page
+  };
+
+  const handleCloseModal = () => {
+    setIsThankYouModalOpen(false);
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-100 to-slate-200">
-      <div className="text-center">
-        {/* TODO: FUSION_GENERATION_APP_PLACEHOLDER replace everything here with the actual app! */}
-        <h1 className="text-2xl font-semibold text-slate-800 flex items-center justify-center gap-3">
-          <svg
-            className="animate-spin h-8 w-8 text-slate-400"
-            viewBox="0 0 50 50"
-          >
-            <circle
-              className="opacity-30"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-            />
-            <circle
-              className="text-slate-600"
-              cx="25"
-              cy="25"
-              r="20"
-              stroke="currentColor"
-              strokeWidth="5"
-              fill="none"
-              strokeDasharray="100"
-              strokeDashoffset="75"
-            />
-          </svg>
-          Generating your app...
-        </h1>
-        <p className="mt-4 text-slate-600 max-w-md">
-          Watch the chat on the left for updates that might need your attention
-          to finish generating
-        </p>
-        <p className="mt-4 hidden max-w-md">{exampleFromServer}</p>
-      </div>
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <HeroSection />
+        <FeaturedBikes />
+        <SellYourBike />
+        <HowItWorks />
+        <CustomerStories />
+        <FAQs />
+      </main>
+      <Footer />
+      
+      <ThankYouModal
+        isOpen={isThankYouModalOpen}
+        onClose={handleCloseModal}
+        onExplore={handleExplore}
+      />
     </div>
   );
 }
