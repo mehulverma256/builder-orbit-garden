@@ -17,11 +17,11 @@ export default function HeroSection() {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-gray-900 mb-6">
-              Shift Gears,{" "}
-              <span className="text-brand-red">Think Big</span>
+              Shift Gears, <span className="text-brand-red">Think Big</span>
             </h1>
             <p className="text-lg md:text-xl text-brand-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
-              Discover the perfect ride from our curated collection of premium motorcycles
+              Discover the perfect ride from our curated collection of premium
+              motorcycles
             </p>
             <button className="bg-brand-red hover:bg-brand-red-hover text-white font-semibold py-4 px-8 rounded-full transition-colors transform hover:scale-105 duration-200">
               Explore Collection

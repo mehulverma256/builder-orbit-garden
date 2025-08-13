@@ -24,8 +24,7 @@ export default function SellYourBike({ onFormSubmit }: SellYourBikeProps) {
           {/* Left Content */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-brand-gray-900 mb-8">
-              Want to sell{" "}
-              <br className="hidden sm:block" />
+              Want to sell <br className="hidden sm:block" />
               your bike?
             </h2>
 
@@ -109,7 +108,9 @@ export default function SellYourBike({ onFormSubmit }: SellYourBikeProps) {
                     {/* Money/coins illustration */}
                     <div className="absolute -top-2 -right-2">
                       <div className="w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
-                        <span className="text-xs font-bold text-yellow-900">₹</span>
+                        <span className="text-xs font-bold text-yellow-900">
+                          ₹
+                        </span>
                       </div>
                     </div>
                   </div>

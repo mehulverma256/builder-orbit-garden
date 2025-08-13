@@ -18,7 +18,8 @@ export default function PlaceholderPage() {
             {pageName} Page
           </h1>
           <p className="text-brand-gray-600 mb-8">
-            This page is under construction. Continue prompting to help build out this section!
+            This page is under construction. Continue prompting to help build
+            out this section!
           </p>
           <Link
             to="/"

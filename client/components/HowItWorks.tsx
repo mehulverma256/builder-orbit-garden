@@ -48,12 +48,8 @@ export default function HowItWorks() {
               <h3 className="text-xl font-semibold text-brand-gray-900 mb-2">
                 {step.title}
               </h3>
-              <p className="text-brand-gray-600 mb-2">
-                {step.description}
-              </p>
-              <p className="text-sm text-brand-gray-500">
-                {step.subtitle}
-              </p>
+              <p className="text-brand-gray-600 mb-2">{step.description}</p>
+              <p className="text-sm text-brand-gray-500">{step.subtitle}</p>
             </div>
           ))}
         </div>

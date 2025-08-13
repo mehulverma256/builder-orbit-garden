@@ -56,7 +56,7 @@ export default function Header() {
             >
               Profile
             </Link>
-            
+
             {/* Location Dropdown */}
             <div className="flex items-center text-brand-gray-700 hover:text-brand-red font-medium cursor-pointer transition-colors">
               <span>Bangalore</span>

@@ -14,7 +14,7 @@ const featuredBikes = [
   {
     id: 2,
     name: "Bajaj Pulsar 180cc",
-    year: "2019", 
+    year: "2019",
     price: "₹ 1,28,990",
     originalPrice: "₹ 1,35,000",
     discount: "7% off today",
@@ -25,7 +25,7 @@ const featuredBikes = [
     id: 3,
     name: "Bajaj Pulsar 180cc",
     year: "2019",
-    price: "₹ 1,28,990", 
+    price: "₹ 1,28,990",
     originalPrice: "₹ 1,35,000",
     discount: "7% off today",
     image: "/placeholder.svg",
@@ -36,7 +36,7 @@ const featuredBikes = [
     name: "Bajaj Pulsar 180cc",
     year: "2019",
     price: "₹ 1,28,990",
-    originalPrice: "₹ 1,35,000", 
+    originalPrice: "₹ 1,35,000",
     discount: "7% off today",
     image: "/placeholder.svg",
     isLiked: false,
@@ -77,7 +77,9 @@ export default function FeaturedBikes() {
                   className="w-full h-48 object-cover"
                 />
                 <button className="absolute top-3 right-3 w-8 h-8 bg-white rounded-full flex items-center justify-center shadow-sm hover:shadow-md transition-shadow">
-                  <Heart className={`h-4 w-4 ${bike.isLiked ? 'text-brand-red fill-current' : 'text-brand-gray-400'}`} />
+                  <Heart
+                    className={`h-4 w-4 ${bike.isLiked ? "text-brand-red fill-current" : "text-brand-gray-400"}`}
+                  />
                 </button>
                 {bike.discount && (
                   <div className="absolute bottom-3 left-3 bg-green-500 text-white text-xs font-medium px-2 py-1 rounded">
@@ -92,7 +94,7 @@ export default function FeaturedBikes() {
                   {bike.name}
                 </h3>
                 <p className="text-sm text-brand-gray-500 mb-3">{bike.year}</p>
-                
+
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-lg font-bold text-brand-gray-900">

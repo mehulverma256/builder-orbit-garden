@@ -6,7 +6,11 @@ interface ThankYouModalProps {
   onExplore: () => void;
 }
 
-export default function ThankYouModal({ isOpen, onClose, onExplore }: ThankYouModalProps) {
+export default function ThankYouModal({
+  isOpen,
+  onClose,
+  onExplore,
+}: ThankYouModalProps) {
   if (!isOpen) return null;
 
   return (

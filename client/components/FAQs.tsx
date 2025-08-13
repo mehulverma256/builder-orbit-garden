@@ -5,32 +5,40 @@ const faqs = [
   {
     id: 1,
     question: "How does Zuto procure bikes?",
-    answer: "Zuto procures bikes through a comprehensive network of trusted sources including individual sellers, dealerships, and auctions. We have strict quality checks and verification processes to ensure all bikes meet our standards.",
+    answer:
+      "Zuto procures bikes through a comprehensive network of trusted sources including individual sellers, dealerships, and auctions. We have strict quality checks and verification processes to ensure all bikes meet our standards.",
   },
   {
     id: 2,
     question: "Are all your bikes Zuto certified?",
-    answer: "Yes, all bikes listed on our platform go through our rigorous Zuto certification process. This includes mechanical inspection, documentation verification, and quality assurance checks.",
+    answer:
+      "Yes, all bikes listed on our platform go through our rigorous Zuto certification process. This includes mechanical inspection, documentation verification, and quality assurance checks.",
   },
   {
     id: 3,
     question: "Does Zuto buy bikes that are registered outside Karnataka?",
-    answer: "Yes, we do purchase bikes registered outside Karnataka. However, additional paperwork and transfer procedures may be required depending on the state of registration.",
+    answer:
+      "Yes, we do purchase bikes registered outside Karnataka. However, additional paperwork and transfer procedures may be required depending on the state of registration.",
   },
   {
     id: 4,
     question: "Is the pricing of the bikes negotiable?",
-    answer: "Our prices are competitively set based on market research and bike condition. While there may be limited room for negotiation, we ensure fair pricing for both buyers and sellers.",
+    answer:
+      "Our prices are competitively set based on market research and bike condition. While there may be limited room for negotiation, we ensure fair pricing for both buyers and sellers.",
   },
   {
     id: 5,
-    question: "Does Zuto offer trade-in options for customers looking to exchange their current bike for a new one?",
-    answer: "Yes, we offer trade-in options! You can use your current bike as part payment for a new purchase. Our experts will evaluate your bike and provide a fair trade-in value.",
+    question:
+      "Does Zuto offer trade-in options for customers looking to exchange their current bike for a new one?",
+    answer:
+      "Yes, we offer trade-in options! You can use your current bike as part payment for a new purchase. Our experts will evaluate your bike and provide a fair trade-in value.",
   },
   {
     id: 6,
-    question: "What financing or payment plans does Zuto offer for purchasing motorcycles?",
-    answer: "We partner with leading financial institutions to offer flexible payment plans and financing options. You can choose from various EMI schemes based on your preference and eligibility.",
+    question:
+      "What financing or payment plans does Zuto offer for purchasing motorcycles?",
+    answer:
+      "We partner with leading financial institutions to offer flexible payment plans and financing options. You can choose from various EMI schemes based on your preference and eligibility.",
   },
 ];
 
@@ -38,10 +46,8 @@ export default function FAQs() {
   const [openItems, setOpenItems] = useState<number[]>([]);
 
   const toggleItem = (id: number) => {
-    setOpenItems(prev => 
-      prev.includes(id) 
-        ? prev.filter(item => item !== id)
-        : [...prev, id]
+    setOpenItems((prev) =>
+      prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id],
     );
   };
 
@@ -71,7 +77,7 @@ export default function FAQs() {
                 </span>
                 <ChevronDown
                   className={`h-5 w-5 text-brand-gray-500 transition-transform ${
-                    openItems.includes(faq.id) ? 'transform rotate-180' : ''
+                    openItems.includes(faq.id) ? "transform rotate-180" : ""
                   }`}
                 />
               </button>
@@ -91,9 +97,7 @@ export default function FAQs() {
           <h3 className="text-xl font-semibold text-brand-gray-900 mb-2">
             Feeling lost? FAQs
           </h3>
-          <p className="text-brand-gray-600 mb-6">
-            Show more
-          </p>
+          <p className="text-brand-gray-600 mb-6">Show more</p>
         </div>
       </div>
     </section>

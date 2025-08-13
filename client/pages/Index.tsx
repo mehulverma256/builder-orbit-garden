@@ -39,7 +39,7 @@ export default function Index() {
         <FAQs />
       </main>
       <Footer />
-      
+
       <ThankYouModal
         isOpen={isThankYouModalOpen}
         onClose={handleCloseModal}

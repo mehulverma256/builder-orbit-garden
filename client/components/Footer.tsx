@@ -1,4 +1,10 @@
-import { Instagram, Facebook, Twitter, Youtube, MessageCircle } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  Twitter,
+  Youtube,
+  MessageCircle,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -30,9 +36,10 @@ export default function Footer() {
           </button>
           <div className="mt-4">
             <p className="text-brand-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur. Bibendum sed auctor elementum 
-              rutrum eget rhoncus. Aenean eget tortor gravida ut rutrum lobortis 
-              bibendum hac. In et lorem odio sit leo vulputat magna rhoncus nionis.
+              Lorem ipsum dolor sit amet consectetur. Bibendum sed auctor
+              elementum rutrum eget rhoncus. Aenean eget tortor gravida ut
+              rutrum lobortis bibendum hac. In et lorem odio sit leo vulputat
+              magna rhoncus nionis.
             </p>
           </div>
         </div>
@@ -43,19 +50,63 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold text-brand-gray-900 mb-4">Services</h5>
             <ul className="space-y-2">
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Buy used bikes</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Sell your bike</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Get instant quote</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Buy used bikes
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Sell your bike
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Get instant quote
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h5 className="font-semibold text-brand-gray-900 mb-4">Quick Links</h5>
+            <h5 className="font-semibold text-brand-gray-900 mb-4">
+              Quick Links
+            </h5>
             <ul className="space-y-2">
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Apply for loan</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Evaluate your bike</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Talk to expert</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Apply for loan
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Evaluate your bike
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Talk to expert
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -63,9 +114,30 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold text-brand-gray-900 mb-4">Zuto</h5>
             <ul className="space-y-2">
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">About Zuto</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Blogs</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Privacy policy</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  About Zuto
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Blogs
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Privacy policy
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -73,31 +145,110 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold text-brand-gray-900 mb-4">Legal</h5>
             <ul className="space-y-2">
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Careers</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Admin panel</a></li>
-              <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Terms of service</a></li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Careers
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Admin panel
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                >
+                  Terms of service
+                </a>
+              </li>
             </ul>
           </div>
         </div>
 
         {/* Popular Searches */}
         <div className="border-t border-brand-gray-200 pt-8 mb-8">
-          <h5 className="font-semibold text-brand-gray-900 mb-4">Popular searches</h5>
+          <h5 className="font-semibold text-brand-gray-900 mb-4">
+            Popular searches
+          </h5>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div>
               <ul className="space-y-2">
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Sell used bikes</a></li>
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Zuto used bikes</a></li>
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Cheap bikes in Bangalore</a></li>
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Suzuki</a></li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Sell used bikes
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Zuto used bikes
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Cheap bikes in Bangalore
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Suzuki
+                  </a>
+                </li>
               </ul>
             </div>
             <div>
               <ul className="space-y-2">
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Hero</a></li>
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Bajaj</a></li>
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Honda</a></li>
-                <li><a href="#" className="text-brand-gray-600 hover:text-brand-red transition-colors">Royal Enfield</a></li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Hero
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Bajaj
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Honda
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-brand-gray-600 hover:text-brand-red transition-colors"
+                  >
+                    Royal Enfield
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -106,18 +257,32 @@ export default function Footer() {
         {/* Social Links and Copyright */}
         <div className="border-t border-brand-gray-200 pt-8 flex flex-col md:flex-row items-center justify-between">
           <div className="mb-4 md:mb-0">
-            <h6 className="font-semibold text-brand-gray-900 mb-2">Connect with us</h6>
+            <h6 className="font-semibold text-brand-gray-900 mb-2">
+              Connect with us
+            </h6>
             <div className="flex items-center space-x-4">
-              <a href="#" className="text-brand-gray-400 hover:text-brand-red transition-colors">
+              <a
+                href="#"
+                className="text-brand-gray-400 hover:text-brand-red transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="text-brand-gray-400 hover:text-brand-red transition-colors">
+              <a
+                href="#"
+                className="text-brand-gray-400 hover:text-brand-red transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-brand-gray-400 hover:text-brand-red transition-colors">
+              <a
+                href="#"
+                className="text-brand-gray-400 hover:text-brand-red transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-brand-gray-400 hover:text-brand-red transition-colors">
+              <a
+                href="#"
+                className="text-brand-gray-400 hover:text-brand-red transition-colors"
+              >
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
