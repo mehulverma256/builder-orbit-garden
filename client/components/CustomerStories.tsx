@@ -49,7 +49,7 @@ export default function CustomerStories() {
               </div>
 
               {/* Content */}
-              <div className="p-8 md:p-12 flex flex-col justify-center">
+              <div className="p-6 sm:p-8 lg:p-12 flex flex-col justify-center">
                 <blockquote className="text-lg md:text-xl text-brand-gray-700 mb-6 leading-relaxed">
                   "{testimonials[0].text}"
                 </blockquote>
