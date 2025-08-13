@@ -36,7 +36,7 @@ export default function HowItWorks() {
         </div>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {steps.map((step, index) => (
             <div key={index} className="text-center group">
               {/* Icon */}
