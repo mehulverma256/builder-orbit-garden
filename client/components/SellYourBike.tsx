@@ -1,7 +1,11 @@
 import { FileText, Search, RefreshCw, Phone } from "lucide-react";
 import { useState } from "react";
 
-export default function SellYourBike() {
+interface SellYourBikeProps {
+  onFormSubmit?: () => void;
+}
+
+export default function SellYourBike({ onFormSubmit }: SellYourBikeProps) {
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
