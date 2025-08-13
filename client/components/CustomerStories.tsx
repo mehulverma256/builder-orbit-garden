@@ -34,7 +34,7 @@ export default function CustomerStories() {
 
           {/* Testimonial Card */}
           <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-            <div className="grid md:grid-cols-2 gap-0">
+            <div className="grid lg:grid-cols-2 gap-0">
               {/* Image */}
               <div className="relative h-64 md:h-auto">
                 <img
