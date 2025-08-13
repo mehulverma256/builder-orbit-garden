@@ -12,6 +12,9 @@ export default function SellYourBike({ onFormSubmit }: SellYourBikeProps) {
     e.preventDefault();
     // Handle form submission here
     console.log("Phone number:", phoneNumber);
+    // Clear form and trigger thank you modal
+    setPhoneNumber("");
+    onFormSubmit?.();
   };
 
   return (
